@@ -24,3 +24,15 @@ body {
   nav li {
     list-style: none;
   }
+
+  div.scroll-container {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 2em;
+    object-position: center top;
+  }
+
+  div.scroll-container img {
+  }

@@ -30,9 +30,10 @@ body {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
-    margin: 2em;
-    object-position: center top;
+    margin: 0em 4em 4em 4em;
   }
 
   div.scroll-container img {
+    border-left: solid 2px yellow;
+    padding: 0em 1em 0em 1em;
   }

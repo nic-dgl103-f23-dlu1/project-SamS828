@@ -7,9 +7,11 @@ body {
   header {
     align-items: center;
     display: flex;
-    padding: 2em;
     background: black;
     margin: auto;
+    width: 100%;
+    position: sticky;
+    top: 0px;
   }
   
   nav { 
@@ -28,7 +30,8 @@ body {
   }
   nav a {
     text-decoration: none;
-    color: white
+    color: white;
+    margin: 0px 10px;
   }
 
   nav a:hover {
@@ -46,23 +49,31 @@ body {
   .home-about {
     display: flex;
     font-size: 1rem;
-    margin-top: 5px;
-    border: solid yellow 2px;
-    align-content: space-around;
+    border: solid yellow 3px;
+    width: 75%;
+    background: rgb(46, 45, 45);
+    color: white;
+    margin: auto;
+    margin-top: 8px;
+  }
+
+  .home-about-text {
+    padding: 50px 50px 50px 100px
   }
 
   .home-about h2 {
-    margin: auto;
-  }
-
-  .home-about p {
-    margin: auto;
-    max-width: 100%;
+    font-family: 'Vollkorn', serif;
   }
 
   .home-about img {
     margin: auto;
     max-width: 100%;
+  }
+
+  .home-services {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
   }
 
   div.scroll-container {
@@ -71,6 +82,7 @@ body {
     white-space: nowrap;
     padding: 10px;
     margin: 0em 8em 2em 8em;
+    scrollbar-color: grey yellow;
   }
 
   div.scroll-container img {

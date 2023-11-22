@@ -1,0 +1,26 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Vollkorn', serif;
+  }
+  
+  header {
+    align-items: center;
+    display: flex;
+    padding: 2em;
+    background: black;
+  }
+  
+  nav { 
+    flex: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+  }
+
+  nav li {
+    list-style: none;
+  }

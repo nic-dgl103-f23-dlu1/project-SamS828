@@ -2,37 +2,42 @@ body {
     font-family: 'Vollkorn', serif;
     font-family: 'PT Sans', sans-serif;
     font-size: 62.5%;
+    background: black;
   }
   
   header {
-    align-items: center;
-    display: flex;
-    background: black;
-    margin: auto;
-    width: 100%;
-    position: sticky;
-    top: 0px;
+    background-color: black;
+    overflow: auto;
+    position: Sticky;
+    top: 0;
   }
   
-  nav { 
-    flex: 1;
-    font-size: 1rem;
+  nav {
+    float: right;
   }
   
   nav ul {
-    display: flex;
-    justify-content: space-around;
-    color:white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
-
+  
   nav li {
-    list-style: none;
+    float: left;
+    margin: 0;
   }
+  
   nav a {
-    text-decoration: none;
     color: white;
-    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 25px;
+    display: inline-block;
   }
+  
 
   nav a:hover {
     text-decoration: underline yellow 3px;
@@ -46,8 +51,46 @@ body {
     background-size: cover;
   }
 
+  .home-services {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home-services h2 {
+    font-family: 'Vollkorn', serif;
+  }
+
+  .home-acct {
+    border: solid yellow 3px;
+    background: rgb(46, 45, 45);
+    padding: 0px 50px 0px 50px;
+    margin: 1rem;
+    max-width: 300px;
+  }
+
+  .home-consult {
+    border: solid yellow 3px;
+    background: rgb(46, 45, 45);
+    padding: 0px 50px 0px 50px;
+    margin: 1rem;
+    max-width: 300px;
+  }
+
+  .home-tax {
+    border: solid yellow 3px;
+    background: rgb(46, 45, 45);
+    padding: 0px 50px 0px 50px;
+    margin: 1rem;
+    max-width: 300px;
+  }
+
   .home-about {
     display: flex;
+    flex-direction: column;
     font-size: 1rem;
     border: solid yellow 3px;
     width: 75%;
@@ -55,10 +98,13 @@ body {
     color: white;
     margin: auto;
     margin-top: 8px;
+    margin-bottom: 8px;
+
   }
 
   .home-about-text {
-    padding: 50px 50px 50px 100px
+    padding: 50px 50px 50px 100px;
+    max-width: 100%;
   }
 
   .home-about h2 {
@@ -70,22 +116,25 @@ body {
     max-width: 100%;
   }
 
-  .home-services {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-  }
-
   div.scroll-container {
     background-color: black;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
-    margin: 0em 8em 2em 8em;
+    margin: 2em 8em 2em 8em;
     scrollbar-color: grey yellow;
   }
 
   div.scroll-container img {
     border-left: solid 2px yellow;
     padding: 0em 1em 0em 1em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .home-about {
+      flex-direction: row;
+    }
+    .home-services { 
+      flex-direction: row;
+    }
   }

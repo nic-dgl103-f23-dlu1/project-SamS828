@@ -58,6 +58,7 @@ body {
     color: white;
     justify-content: space-around;
     align-items: center;
+    margin: 2rem;
   }
 
   .home-services h2 {
@@ -121,7 +122,7 @@ body {
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
-    margin: 2em 8em 2em 8em;
+    margin: 4em 8em 4em 8em;
     scrollbar-color: grey yellow;
   }
 
@@ -138,3 +139,14 @@ body {
       flex-direction: row;
     }
   }
+
+  .call-to-action {
+    font-size: 1rem;
+    color: white;
+  }
+
+  footer {
+    color: white;
+    font-size: 0.75rem;
+  }
+

@@ -208,3 +208,47 @@ body {
     font-size: 0.75rem;
   }
 
+/* Services */
+
+.top-image {
+  float: right;
+  width: auto;
+}
+
+.services-main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.services-main h2 {
+  font-size: 2rem;
+  font-family: 'Vollkorn', serif;
+}
+
+.main-accounting {
+  border: solid yellow 3px;
+  margin: 10px;
+  padding: 30px;
+  font-size: 1rem;
+  background-color: rgb(46, 45, 45);
+  flex-shrink: 0;
+}
+
+.main-consulting {
+  border: solid yellow 3px;
+  margin: 10px;
+  padding: 30px;
+  font-size: 1rem;
+  background-color: rgb(46, 45, 45);
+  flex-shrink: 0;
+}
+
+.main-taxes {
+  border: solid yellow 3px;
+  margin: 10px;
+  padding: 30px;
+  font-size: 1rem;
+  background-color: rgb(46, 45, 45);
+  flex-shrink: 0;
+}
